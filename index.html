@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <style>
+        .main {
+            font-family: Arial, sans-serif;
+            background-color: #0b0b0b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+
+        .pricing {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .pricing-text {
+            color: #4b00d4;
+            margin: 20px;
+            font-size: 40px;
+        }
+
+        .text {
+            margin-left: 20px;
+        }
+
+
+        .pricing-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+
+
+        .pricing-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-header p {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+
+        .plan {
+            background-color: #181818;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .plan.pro {
+            width: 60%;
+            border: 1px solid #8b8888;
+        }
+
+        .plan.pro .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .plan.pro .description {
+            color: #ccc;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .price h2 {
+            font-size: 48px;
+            color: #ffffff;
+        }
+
+        .price p {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+
+        .features {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .tick {
+            color: #6200ea;
+        }
+
+        .freebtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .freebtn:hover {
+            background-color: #4b00d4;
+        }
+
+        .plan.basic {
+            position: relative;
+            top: 20px;
+            right: 15px;
+            width: 30%;
+            height: 360px;
+            background-color: #222;
+            border: 1px solid #8b8888;
+        }
+
+        .publish {
+            position: relative;
+            top: -20px;
+            color: #bbb;
+        }
+
+        .free {
+            position: relative;
+            top: -40px;
+        }
+
+        .basictext {
+            position: relative;
+            top: -20px;
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .plan.basic h2 {
+            font-size: 48px;
+            color: #ffffff;
+        }
+
+        .plan.basic p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="pricing">
+
+            <div class="pricing-header">
+
+                <div class="pricing-text">Pricing</div>
+
+
+                <h1 class="text">One Price for Everything</h1>
+                <p class="text">The simplest pricing in the industry. You won't need a calculator for this.</p>
+            </div>
+
+            <div class="pricing-plans">
+
+                <div class="plan pro">
+
+                    <div class="title">Pro</div>
+                    <div class="description">Includes everything you need for your professional website</div>
+
+
+                    <div class="price">
+                        <h2>$20</h2>
+                        <p>/ Site / Month (billed annually)</p>
+                    </div>
+
+
+                    <div class="features">
+
+                        <ul>
+                            <li><span class="tick">✔</span> Custom Domains</li>
+                            <li><span class="tick">✔</span>GDPR Solution</li>
+                            <li><span class="tick">✔</span>Beautiful Site Design</li>
+                            <li><span class="tick">✔</span>Super-Fast Hosting</li>
+                            <li><span class="tick">✔</span>Analytics</li>
+                            <li><span class="tick">✔</span>Custom Forms</li>
+                            <li><span class="tick">✔</span>Blogging</li>
+                        </ul>
+
+
+                        <ul>
+                            <li><span class="tick">✔</span>Password Protection</li>
+                            <li><span class="tick">✔</span>Multilingual Sites</li>
+                            <li><span class="tick">✔</span>User Management</li>
+                            <li><span class="tick">✔</span>Unlimited Pages</li>
+                            <li><span class="tick">✔</span>Unlimited Team Members</li>
+                        </ul>
+                    </div>
+
+                    <button class="freebtn">Get Started</button>
+                </div>
+
+
+                <div class="plan basic">
+                    <h2 class="basic">Basic</h2>
+                    <p class="publish">Publish your site for free with almost all pro features.</p>
+                    <h2 class="free">Free</h2>
+                    <div class="basictext">
+                        Everything from Pro ,expect
+                    </div>
+                    <div class="basictext">
+                        - No Custom Domain
+                    </div>
+                    <div class="basictext">- "Made with Umso" Branding</div>
+                    <div class="basictext">No credit card require</div>
+                    <button class="freebtn">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
